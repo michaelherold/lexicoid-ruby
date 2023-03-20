@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     "bug_tracker_uri" => "https://github.com/michaelherold/lexicoid-ruby/issues",
     "changelog_uri" => "https://github.com/michaelherold/lexicoid-ruby/blob/main/CHANGELOG.md",
-    "documentation_uri" => "https://rubydoc.info/gems/lexicoid-ruby/#{Lexicoid::VERSION}",
+    "documentation_uri" => "https://rubydoc.info/gems/lexicoid/#{Lexicoid::VERSION}",
     "homepage_uri" => "https://github.com/michaelherold/lexicoid-ruby",
     "rubygems_mfa_required" => "true",
     "source_code_uri" => "https://github.com/michaelherold/lexicoid-ruby"
