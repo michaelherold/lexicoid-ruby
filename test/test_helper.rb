@@ -16,8 +16,19 @@ require "minitest/autorun"
 require "minitest/reporters"
 require "pry"
 require "pry-byebug"
+require "time"
+
+require "active_support"
+require "active_support/core_ext/integer/time"
+require "active_support/core_ext/time"
+require "active_support/time_with_zone"
 
 require "lexicoid"
+
+Time.zone = "UTC"
+
+# Remove this when bumping to ActiveSupport 7.1
+ActiveSupport::TimeWithZone.singleton_class.remove_method(:name)
 
 Minitest::Reporters.use! [
   Minitest::Reporters::DefaultReporter.new(
